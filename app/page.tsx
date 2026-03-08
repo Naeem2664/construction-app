@@ -17,7 +17,7 @@ export default function HomePage() {
       <header className="header">
         <div className="container">
           <div className="content">
-            <h1 className="logo">ConstructCo</h1>
+            <h1 className="logo">AS Construction & Co</h1>
             <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
               <a href="#services" className="nav-item" onClick={toggleMenu}>Services</a>
               <a href="#about" className="nav-item" onClick={toggleMenu}>About Us</a>
