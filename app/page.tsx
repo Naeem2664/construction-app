@@ -38,7 +38,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <main>
-        <section className="hero-section">
+        <section className="hero-section" style={{ backgroundImage: "url('/images/illustration-construction-site.jpg')" }}>
           <div className="content">
             <h2 className="title">Building Your Future</h2>
             <p className="subtitle">High-quality construction services for commercial and residential projects.</p>
@@ -90,7 +90,7 @@ export default function HomePage() {
           <div className="container">
             <div className="about-content">
               <div className="about-image-wrapper">
-                <img src="https://placehold.co/600x400/cccccc/666666" alt="About Us" className="about-image" />
+                <img src="/images/construction-silhouette.jpg" alt="About Us" className="about-image" />
               </div>
               <div className="about-text">
                 <h3 className="section-title">About ConstructCo</h3>
@@ -103,6 +103,7 @@ export default function HomePage() {
                   We value the importance of our relationships and will continue to remain fair and true in our dealings
                   with all employees, clients, vendors, and partners.
                 </p>
+                <a href="/docs/Doc1.pdf" download className="download-button">Download Brochure</a>
               </div>
             </div>
 
@@ -110,21 +111,22 @@ export default function HomePage() {
               <h3 className="section-title text-center">Meet Our Team</h3>
               <div className="team-grid">
                 <div className="team-card">
-                  <img src="https://placehold.co/300x300/e2e8f0/4a5568" alt="Haji Muhammad" className="team-avatar" />
+                  <img src="/images/haji.jpeg" alt="Haji Muhammad" className="team-avatar" />
                   <h4 className="team-name">Haji Muhammad</h4>
                   <p className="team-title">President</p>
                 </div>
                 <div className="team-card">
-                  <img src="https://placehold.co/300x300/e2e8f0/4a5568" alt="Abdul Sattar Chandia" className="team-avatar" />
+                  <img src="/images/sattar.jpeg" alt="Abdul Sattar Chandia" className="team-avatar" />
                   <h4 className="team-name">Abdul Sattar Chandia</h4>
                   <p className="team-title">Vice President</p>
-                  <p className="team-contact">03406016312</p>
+                  <p className="team-contact">03497003264</p>
+
                 </div>
                 <div className="team-card">
-                  <img src="https://placehold.co/300x300/e2e8f0/4a5568" alt="Saad Hassn Chandia" className="team-avatar" />
+                  <img src="/images/saad.jpeg" alt="Saad Hassn Chandia" className="team-avatar" />
                   <h4 className="team-name">Saad Hassn Chandia</h4>
                   <p className="team-title">Legal Advisor</p>
-                  <p className="team-contact">03497003264</p>
+                  <p className="team-contact">03406016312</p>
                 </div>
               </div>
             </div>
@@ -144,19 +146,19 @@ export default function HomePage() {
             <h3 className="section-title text-center">Our Projects</h3>
             <div className="projects-grid">
               <div className="project-card">
-                <img src="https://placehold.co/600x400/a0aec0/ffffff" alt="Project 1" />
+                <img src="/images/project1.jpg" alt="Project 1" />
                 <div className="overlay">
                   <p className="overlay-text">Commercial Building</p>
                 </div>
               </div>
               <div className="project-card">
-                <img src="https://placehold.co/600x400/a0aec0/ffffff" alt="Project 2" />
+                <img src="/images/project2.jpg" alt="Project 2" />
                 <div className="overlay">
                   <p className="overlay-text">Residential Home</p>
                 </div>
               </div>
               <div className="project-card">
-                <img src="https://placehold.co/600x400/a0aec0/ffffff" alt="Project 3" />
+                <img src="/images/project3.jpg" alt="Project 3" />
                 <div className="overlay">
                   <p className="overlay-text">Office Renovation</p>
                 </div>
