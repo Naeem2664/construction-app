@@ -1,102 +1,232 @@
-import Image from "next/image";
 
-export default function Home() {
+import { Building, Hammer, Wrench, Phone, Mail, MapPin, Star } from 'lucide-react';
+
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-light text-secondary">
+      {/* Header */}
+      <header className="header">
+        <div className="container">
+          <div className="content">
+            <h1 className="logo">ConstructCo</h1>
+            <nav className="nav-menu">
+              <a href="#services" className="nav-item">Services</a>
+              <a href="#about" className="nav-item">About Us</a>
+              <a href="#projects" className="nav-item">Projects</a>
+              <a href="#contact" className="nav-item">Contact</a>
+            </nav>
+            <button className="menu-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
         </div>
+      </header>
+
+      {/* Hero Section */}
+      <main>
+        <section className="hero-section">
+          <div className="content">
+            <h2 className="title">Building Your Future</h2>
+            <p className="subtitle">High-quality construction services for commercial and residential projects.</p>
+            <a href="#contact" className="cta-button">
+              Get a Free Quote
+            </a>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section id="services" className="section bg-white text-secondary">
+          <div className="container text-center">
+            <h3 className="section-title">Our Services</h3>
+            <p className="section-subtitle">We offer a wide range of construction services.</p>
+            <div className="services-grid">
+              <div className="service-card">
+                <div className="icon-wrapper">
+                  <div className="icon">
+                    <Building size={32} />
+                  </div>
+                </div>
+                <h4 className="title">General Contracting</h4>
+                <p>Comprehensive management of your construction project from start to finish.</p>
+              </div>
+              <div className="service-card">
+                <div className="icon-wrapper">
+                  <div className="icon">
+                    <Hammer size={32} />
+                  </div>
+                </div>
+                <h4 className="title">Design-Build</h4>
+                <p>A streamlined process that combines design and construction into a single contract.</p>
+              </div>
+              <div className="service-card">
+                <div className="icon-wrapper">
+                  <div className="icon">
+                    <Wrench size={32} />
+                  </div>
+                </div>
+                <h4 className="title">Remodeling</h4>
+                <p>Transform your existing space with our expert renovation and remodeling services.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Us Section */}
+        <section id="about" className="section bg-light text-secondary">
+          <div className="container about-content">
+            <div className="about-image-wrapper">
+              <img src="https://placehold.co/600x400/cccccc/666666" alt="About Us" className="about-image" />
+            </div>
+            <div className="about-text">
+              <h3 className="section-title">About ConstructCo</h3>
+              <p>
+                With over 20 years of experience in the construction industry, ConstructCo has built a reputation for
+                excellence, integrity, and reliability. Our mission is to deliver high-quality, cost-effective projects
+                on schedule by employing and supporting motivated, flexible, and focused teams.
+              </p>
+              <p>
+                We value the importance of our relationships and will continue to remain fair and true in our dealings
+                with all employees, clients, vendors, and partners.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section id="projects" className="section bg-white text-secondary">
+          <div className="container">
+            <h3 className="section-title text-center">Our Projects</h3>
+            <div className="projects-grid">
+              <div className="project-card">
+                <img src="https://placehold.co/600x400/a0aec0/ffffff" alt="Project 1" />
+                <div className="overlay">
+                  <p className="overlay-text">Commercial Building</p>
+                </div>
+              </div>
+              <div className="project-card">
+                <img src="https://placehold.co/600x400/a0aec0/ffffff" alt="Project 2" />
+                <div className="overlay">
+                  <p className="overlay-text">Residential Home</p>
+                </div>
+              </div>
+              <div className="project-card">
+                <img src="https://placehold.co/600x400/a0aec0/ffffff" alt="Project 3" />
+                <div className="overlay">
+                  <p className="overlay-text">Office Renovation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="section bg-light text-secondary">
+          <div className="container text-center">
+            <h3 className="section-title">What Our Clients Say</h3>
+            <div className="testimonials-grid">
+              <div className="testimonial-card">
+                <div className="client-info">
+                  <img src="https://placehold.co/100x100/e2e8f0/4a5568" alt="Client 1" className="client-avatar" />
+                  <div>
+                    <h4 className="client-name">John Doe</h4>
+                    <div className="stars">
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                    </div>
+                  </div>
+                </div>
+                <p>"ConstructCo delivered our project on time and on budget. Their team was professional and easy to work with."</p>
+              </div>
+              <div className="testimonial-card">
+                <div className="client-info">
+                  <img src="https://placehold.co/100x100/e2e8f0/4a5568" alt="Client 2" className="client-avatar" />
+                  <div>
+                    <h4 className="client-name">Jane Smith</h4>
+                    <div className="stars">
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                    </div>
+                  </div>
+                </div>
+                <p>"We were impressed with the quality of work and attention to detail. Highly recommend ConstructCo."</p>
+              </div>
+              <div className="testimonial-card">
+                <div className="client-info">
+                  <img src="https://placehold.co/100x100/e2e8f0/4a5568" alt="Client 3" className="client-avatar" />
+                  <div>
+                    <h4 className="client-name">Mike Johnson</h4>
+                    <div className="stars">
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                      <Star size={20} fill="currentColor" />
+                    </div>
+                  </div>
+                </div>
+                <p>"The best construction company we've ever worked with. Their commitment to quality is unmatched."</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="section contact-section">
+          <div className="container">
+            <h3 className="section-title text-center">Contact Us</h3>
+            <div className="contact-content">
+              <div className="contact-form-wrapper">
+                <form className="contact-form">
+                  <h4 className="form-title">Send us a message</h4>
+                  <div className="form-group">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" id="name" />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input type="email" id="email" />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="message">Message</label>
+                    <textarea id="message" rows={4}></textarea>
+                  </div>
+                  <button type="submit" className="submit-button">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+              <div className="contact-info-wrapper">
+                <div className="contact-item">
+                  <Mail size={24} className="icon" />
+                  <span>contact@constructco.com</span>
+                </div>
+                <div className="contact-item">
+                  <Phone size={24} className="icon" />
+                  <span>(123) 456-7890</span>
+                </div>
+                <div className="contact-item">
+                  <MapPin size={24} className="icon" />
+                  <span>123 Construction Ave, Buildtown, USA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container text-center">
+          <p>&copy; {new Date().getFullYear()} ConstructCo. All Rights Reserved.</p>
+        </div>
       </footer>
     </div>
   );
