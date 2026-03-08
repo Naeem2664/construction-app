@@ -40,8 +40,8 @@ export default function HomePage() {
       <main>
         <section className="hero-section" style={{ backgroundImage: "url('/images/illustration-construction-site.jpg')" }}>
           <div className="content">
-            <h2 className="title">Building Your Future</h2>
-            <p className="subtitle">High-quality construction services for commercial and residential projects.</p>
+          <h2 className="title">Aapka Mustaqbil Banate Hue</h2>            
+          <p className="subtitle">Commercial aur residential projects ke liye behtareen quality ki construction services.</p>
             <a href="#contact" className="cta-button">
               Get a Free Quote
             </a>
@@ -52,7 +52,7 @@ export default function HomePage() {
         <section id="services" className="section bg-white text-secondary">
           <div className="container text-center">
             <h3 className="section-title">Our Services</h3>
-            <p className="section-subtitle">We offer a wide range of construction services.</p>
+            <p className="section-subtitle">Hum mukhtalif qisam ki construction services provide karte hain.</p>
             <div className="services-grid">
               <div className="service-card">
                 <div className="icon-wrapper">
@@ -61,7 +61,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <h4 className="title">General Contracting</h4>
-                <p>Comprehensive management of your construction project from start to finish.</p>
+                <p>Hum aap ke construction project ko start se finish tak poori tarah manage karte hain.</p>
               </div>
               <div className="service-card">
                 <div className="icon-wrapper">
@@ -70,8 +70,8 @@ export default function HomePage() {
                   </div>
                 </div>
                 <h4 className="title">Design-Build</h4>
-                <p>A streamlined process that combines design and construction into a single contract.</p>
-              </div>
+                <p>Ek aisa process jo design aur construction dono ko aik hi contract ke zariye manage karta hai.</p>
+               </div>
               <div className="service-card">
                 <div className="icon-wrapper">
                   <div className="icon">
@@ -79,8 +79,8 @@ export default function HomePage() {
                   </div>
                 </div>
                 <h4 className="title">Remodeling</h4>
-                <p>Transform your existing space with our expert renovation and remodeling services.</p>
-              </div>
+                <p>Hamari expert renovation aur remodeling services ke sath apni existing space ko naya aur behtar banayein.</p>              
+                </div>
             </div>
           </div>
         </section>
@@ -95,14 +95,11 @@ export default function HomePage() {
               <div className="about-text">
                 <h3 className="section-title">About ConstructCo</h3>
                 <p>
-                  With over 20 years of experience in the construction industry, ConstructCo has built a reputation for
-                  excellence, integrity, and reliability. Our mission is to deliver high-quality, cost-effective projects
-                  on schedule by employing and supporting motivated, flexible, and focused teams.
-                </p>
-                <p>
-                  We value the importance of our relationships and will continue to remain fair and true in our dealings
-                  with all employees, clients, vendors, and partners.
-                </p>
+Construction industry mein 20 saal se zyada tajurbe ke sath, ConstructCo ne behtareen kaam, imaandari aur bharose ki strong reputation banayi hai. Hamara mission hai high-quality aur cost-effective projects ko time par deliver karna, motivated, flexible aur focused teams ke sath kaam karte hue.
+</p>
+<p>
+Hum apne taaluqat ki ahmiyat ko samajhte hain aur hamesha apne employees, clients, vendors aur partners ke sath imandari aur insaaf ke sath deal karte hain.
+</p>
                 <a href="/docs/Doc1.pdf" download className="download-button">Download Brochure</a>
               </div>
             </div>
@@ -134,8 +131,8 @@ export default function HomePage() {
             <div className="vision-section">
               <h3 className="section-title text-center">Vision of the Owners</h3>
               <p className="vision-text">
-                Our vision is to be a leading construction company known for our commitment to quality, innovation, and customer satisfaction. We strive to create a positive impact on the communities we serve by building with integrity and excellence. We believe in fostering a culture of collaboration and respect, where our team members can grow and thrive. Together, we are building a legacy of trust and quality that will last for generations.
-              </p>
+Hamari vision yeh hai ke hum aik leading construction company banen jo apni quality, innovation aur customer satisfaction ke liye jaani jaye. Hum koshish karte hain ke jin communities ko hum serve karte hain unpar positive impact daalein, imandari aur excellence ke sath construction karte hue. Hum collaboration aur respect ki culture ko barhawa dene par yaqeen rakhte hain jahan hamari team ke members grow aur thrive kar saken. Mil kar hum trust aur quality ki aisi legacy bana rahe hain jo naslon tak qaim rahegi.
+</p>
             </div>
           </div>
         </section>
@@ -186,8 +183,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-                <p>"ConstructCo delivered our project on time and on budget. Their team was professional and easy to work with."</p>
-              </div>
+                <p>"AS Construction & Co ne hamara project time par aur budget ke andar deliver kiya. Unki team professional thi aur unke sath kaam karna bohat asaan tha."</p>              </div>
               <div className="testimonial-card">
                 <div className="client-info">
                   <img src="https://placehold.co/100x100/e2e8f0/4a5568" alt="Client 2" className="client-avatar" />
@@ -202,8 +198,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-                <p>"We were impressed with the quality of work and attention to detail. Highly recommend ConstructCo."</p>
-              </div>
+                <p>"Hum unke kaam ki behtareen quality aur choti choti details par di gayi tawajjo se bohat mutasir hue. Hum AS Construction & Co ko zaroor recommend karte hain."</p>              </div>
               <div className="testimonial-card">
                 <div className="client-info">
                   <img src="https://placehold.co/100x100/e2e8f0/4a5568" alt="Client 3" className="client-avatar" />
@@ -218,8 +213,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-                <p>"The best construction company we've ever worked with. Their commitment to quality is unmatched."</p>
-              </div>
+                <p>"Sab se behtareen construction company jinke sath humne kabhi kaam kiya. Unka quality ke liye commitment be-misaal hai."</p>              </div>
             </div>
           </div>
         </section>
