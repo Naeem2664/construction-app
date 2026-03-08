@@ -75,20 +75,52 @@ export default function HomePage() {
 
         {/* About Us Section */}
         <section id="about" className="section bg-light text-secondary">
-          <div className="container about-content">
-            <div className="about-image-wrapper">
-              <img src="https://placehold.co/600x400/cccccc/666666" alt="About Us" className="about-image" />
+          <div className="container">
+            <div className="about-content">
+              <div className="about-image-wrapper">
+                <img src="https://placehold.co/600x400/cccccc/666666" alt="About Us" className="about-image" />
+              </div>
+              <div className="about-text">
+                <h3 className="section-title">About ConstructCo</h3>
+                <p>
+                  With over 20 years of experience in the construction industry, ConstructCo has built a reputation for
+                  excellence, integrity, and reliability. Our mission is to deliver high-quality, cost-effective projects
+                  on schedule by employing and supporting motivated, flexible, and focused teams.
+                </p>
+                <p>
+                  We value the importance of our relationships and will continue to remain fair and true in our dealings
+                  with all employees, clients, vendors, and partners.
+                </p>
+              </div>
             </div>
-            <div className="about-text">
-              <h3 className="section-title">About ConstructCo</h3>
-              <p>
-                With over 20 years of experience in the construction industry, ConstructCo has built a reputation for
-                excellence, integrity, and reliability. Our mission is to deliver high-quality, cost-effective projects
-                on schedule by employing and supporting motivated, flexible, and focused teams.
-              </p>
-              <p>
-                We value the importance of our relationships and will continue to remain fair and true in our dealings
-                with all employees, clients, vendors, and partners.
+
+            <div className="team-section">
+              <h3 className="section-title text-center">Meet Our Team</h3>
+              <div className="team-grid">
+                <div className="team-card">
+                  <img src="https://placehold.co/300x300/e2e8f0/4a5568" alt="Haji Muhammad" className="team-avatar" />
+                  <h4 className="team-name">Haji Muhammad</h4>
+                  <p className="team-title">President</p>
+                </div>
+                <div className="team-card">
+                  <img src="https://placehold.co/300x300/e2e8f0/4a5568" alt="Abdul Sattar Chandia" className="team-avatar" />
+                  <h4 className="team-name">Abdul Sattar Chandia</h4>
+                  <p className="team-title">Vice President</p>
+                  <p className="team-contact">03406016312</p>
+                </div>
+                <div className="team-card">
+                  <img src="https://placehold.co/300x300/e2e8f0/4a5568" alt="Saad Hassn Chandia" className="team-avatar" />
+                  <h4 className="team-name">Saad Hassn Chandia</h4>
+                  <p className="team-title">Legal Advisor</p>
+                  <p className="team-contact">03497003264</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="vision-section">
+              <h3 className="section-title text-center">Vision of the Owners</h3>
+              <p className="vision-text">
+                Our vision is to be a leading construction company known for our commitment to quality, innovation, and customer satisfaction. We strive to create a positive impact on the communities we serve by building with integrity and excellence. We believe in fostering a culture of collaboration and respect, where our team members can grow and thrive. Together, we are building a legacy of trust and quality that will last for generations.
               </p>
             </div>
           </div>
