@@ -1,7 +1,16 @@
 
+"use client";
+
 import { Building, Hammer, Wrench, Phone, Mail, MapPin, Star } from 'lucide-react';
+import { useState } from 'react';
 
 export default function HomePage() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="bg-light text-secondary">
       {/* Header */}
@@ -9,15 +18,18 @@ export default function HomePage() {
         <div className="container">
           <div className="content">
             <h1 className="logo">ConstructCo</h1>
-            <nav className="nav-menu">
-              <a href="#services" className="nav-item">Services</a>
-              <a href="#about" className="nav-item">About Us</a>
-              <a href="#projects" className="nav-item">Projects</a>
-              <a href="#contact" className="nav-item">Contact</a>
+            <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+              <a href="#services" className="nav-item" onClick={toggleMenu}>Services</a>
+              <a href="#about" className="nav-item" onClick={toggleMenu}>About Us</a>
+              <a href="#projects" className="nav-item" onClick={toggleMenu}>Projects</a>
+              <a href="#contact" className="nav-item" onClick={toggleMenu}>Contact</a>
             </nav>
-            <button className="menu-toggle">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            <button className={`menu-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
