@@ -238,15 +238,15 @@ export default function HomePage() {
               <div className="contact-info-wrapper">
                 <div className="contact-item">
                   <Mail size={24} className="icon" />
-                  <span>contact@constructco.com</span>
+                  <span>abdulghaffar3230@gmail.com</span>
                 </div>
                 <div className="contact-item">
                   <Phone size={24} className="icon" />
-                  <span>(123) 456-7890</span>
+                  <span>+92 340 7001729</span>
                 </div>
                 <div className="contact-item">
                   <MapPin size={24} className="icon" />
-                  <span>123 Construction Ave, Buildtown, USA</span>
+                  <span>Kot Addu, Punjab, Pakistan</span>
                 </div>
               </div>
             </div>
